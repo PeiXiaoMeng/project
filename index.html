@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>项目展示</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="layout">
+			<aside class="sidebar">
+				<div class="brand">项目</div>
+				<nav class="nav">
+					<a class="nav-btn active" href="#pro1" data-target="pro1">
+						短剧项目
+					</a>
+					<a class="nav-btn" href="#pro2" data-target="pro2">
+						海外短剧项目
+					</a>
+					<a class="nav-btn" href="#pro3" data-target="pro3">
+						高济健康pro小程序
+					</a>
+					<a class="nav-btn" href="#pro4" data-target="pro4">
+						流程图
+					</a>
+				</nav>
+			</aside>
+			<main class="content">
+				<section
+					id="pro1"
+					class="project active"
+					data-folder="img/pro1"
+					data-count="6"
+				>
+					<h2>短剧项目</h2>
+					<div class="gallery"></div>
+				</section>
+				<section
+					id="pro2"
+					class="project"
+					data-folder="img/pro2"
+					data-count="4"
+				>
+					<h2>海外短剧项目</h2>
+					<div class="gallery"></div>
+				</section>
+				<section
+					id="pro3"
+					class="project"
+					data-folder="img/pro3"
+					data-count="5"
+					data-ext="jpg"
+				>
+					<h2>高济健康pro小程序</h2>
+					<div class="gallery"></div>
+				</section>
+				<section
+					id="pro4"
+					class="project"
+					data-folder="img/pro4"
+					data-count="1"
+					data-ext="jpg"
+				>
+					<h2>流程图</h2>
+					<div class="gallery"></div>
+				</section>
+			</main>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

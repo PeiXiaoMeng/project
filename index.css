@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+	background: #f6f7fb;
+	color: #1f2937;
+}
+
+.layout {
+	display: flex;
+	min-height: 100vh;
+}
+
+.sidebar {
+	width: 220px;
+	background: #111827;
+	color: #fff;
+	padding: 24px 16px;
+	position: sticky;
+	top: 0;
+	height: 100vh;
+}
+
+.brand {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.nav-btn {
+	display: block;
+	padding: 10px 14px;
+	border-radius: 10px;
+	color: #e5e7eb;
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.08);
+	transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-btn:hover {
+	background: rgba(255, 255, 255, 0.16);
+	color: #fff;
+}
+
+.nav-btn.active {
+	background: #2563eb;
+	color: #fff;
+}
+
+.content {
+	flex: 1;
+	padding: 32px;
+}
+
+.project {
+	display: none;
+}
+
+.project.active {
+	display: block;
+}
+
+.project h2 {
+	margin: 0 0 20px;
+	font-size: 24px;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 16px;
+}
+
+.gallery img {
+	width: 100%;
+	display: block;
+	border-radius: 12px;
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+	background: #fff;
+}
+
+#pro4.active .gallery {
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+#pro4.active .gallery img {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.layout {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		width: 100%;
+		height: auto;
+		position: static;
+	}
+
+	.content {
+		padding: 20px;
+	}
+}
